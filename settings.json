@@ -1,0 +1,8 @@
+{
+  "twitter_access_key" : "850580974702297089-j9VbB2nfG8MIV3gDM2iLeF1NGB3JSx5",
+  "twitter_access_secret" : "C8UEGhS3fJq3Kh1a1XIQlKCFbeLSdiDr4kY9n7s9eNmfG",
+  "twitter_consumer_key" : "01bslizkj9aza9UCsu82vA6ci",
+  "twitter_consumer_secret" : "M6Zt7ntZGD8Pua1NSe9m4qhBWeD5GjWTuMk4iKexZ5lPDY0zoV",
+  "watson_pi_url" : "https://gateway-syd.watsonplatform.net/personality-insights/api",
+  "watson_iam_apikey" : "ffEc4QumFvMhXsr5cQjCB8-KHIkYdrK7qJx6ASycI_rR"
+}

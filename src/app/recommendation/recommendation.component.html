@@ -1,0 +1,56 @@
+<input type="text" [(ngModel)]="credentials.id">
+<button (click)="PassId()"></button>
+
+<div class="row">
+
+  <div class="col-md-4 col-s-4">
+      <div class="card mb-4 flip-card">
+          <!-- <label> -->
+          <div class="flip-card-inner" id="jobCard" [class.voted]="flipped">
+            <!--Card image-->
+            <div class="flip-card-front">
+              <div class="view overlay">
+                <img class="card-img-top h-100 w-100" src="assets/img/job2.jpg" alt="Card image cap">
+                <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <!-- <h4 class="card-title"></h4> -->
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-outline-info" ngbButton (click)="flipIt()">Job</button>
+              </div>
+            </div>
+            <div class="back flip-card-back">
+                <div class="form-group">
+                    <label for="">Job</label>
+                    <br><br>
+                    <label for="usr">Enter Twitter Id</label>
+                    <br>
+                    <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-info">Submit</button>
+                </div>
+            </div>
+          </div>
+          <!-- </label>    -->
+        </div>         
+      
+        <!-- Card -->
+      
+
+  </div>
+
+
+  <div class="col-md-8 col-s-8">
+    <ag-grid-angular #agGrid style="width: 100%; height: 300px;" class="ag-theme-balham" [autoGroupColumnDef]="autoGroupColumnDef"
+      [rowData]="rowData" [columnDefs]="columnDefs" [enableSorting]="true" [enableFilter]="true" rowSelection="multiple"
+      [showToolPanel]="showToolPanel" [enableColResize]="true">
+    </ag-grid-angular>
+  </div>
+</div>
